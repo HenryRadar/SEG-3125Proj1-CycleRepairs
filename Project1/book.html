@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">	
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Ottawa Cycle Repairs - Schedule Appointment</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="background: #374d67;">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="/#">
+                <img src="/assets/logo.png" alt="logo" width="200" height="100" class="d-inline-block align-text-center">
+                <span class="navbar-text" style="color: white; font-family: 'Roboto Serif', serif;">
+                    Ottawa Cycle Repairs
+                </span>
+            </a>
+            <div class="d-flex" id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/experts.html">Our Experts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/location.html#questions">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/location.html">Location & Hours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/book.html">Schedule Now</a>     
+                  </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+
+    <!-- booking -->
+    <div class="container-lg">
+      <div class="text-center" style="margin-top:50px;">
+        <h2>Book an Appointment</h2>
+      </div>
+      <div class="card bg-light border-0">
+        <div class="card-body">
+          <div class="text-center">Appointment Information</div>
+
+          <form name="mainForm" action="" onsubmit="return false">
+            <div class="row justify-content-center py-4">
+              <div class="col-4 px-4">
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="service">Service</label>
+                  <select class="form-select" id="service">
+                    <option selected></option>
+                    <option value="Bike Tuning">Bike Tuning</option>
+                    <option value="Bike Repair">Bike Repair</option>
+                    <option value="Full Tuning">Full Tuning</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-4 px-4">
+                <div class="input-group mb-3">
+                  <label class="input-group-text" for="expert">Expert</label>
+                  <select class="form-select" id="expert">
+                    <option selected></option>
+                    <option value="Henry Radar">Henry Radar</option>
+                    <option value="John Smith">John Smith</option>
+                    <option value="Michael Eichel">Michael Eichel</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+              <div class="col-4 px-4">
+                  <div class="input-group date mb-3" id="datepicker">
+                    <label for="date" class="input-group-text">Date:</label>
+                    <input type="text" class="form-control" id="date"/>
+                    <span class="input-group-append">
+                      <span class="input-group-text bg-light d-block">
+                        <i class="fa fa-calendar" style="min-height:24px"></i>
+                      </span>
+                    </span>
+                    </div>
+              </div>
+              
+              <div class="col-4 px-4">
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="time">Time</label>
+                    <select class="form-select" id="time">
+                      <option selected></option>
+                      <option value="7:00 AM">7:00 AM</option>
+                      <option value="7:00 AM">8:00 AM</option>
+                      <option value="7:00 AM">9:00 AM</option>
+                      <option value="7:00 AM">10:00 AM</option>
+                      <option value="7:00 AM">11:00 AM</option>
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="1:00 PM">1:00 PM</option>
+                      <option value="2:00 PM">2:00 PM</option>
+                      <option value="3:00 PM">3:00 PM</option>
+                      <option value="4:00 PM">4:00 PM</option>
+                      <option value="5:00 PM">5:00 PM</option>
+                      <option value="6:00 PM">6:00 PM</option>
+                      <option value="7:00 PM">7:00 PM</option>
+                    </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center py-3">Your Information</div>
+
+            <div class="row justify-content-center py-2">
+              <div class="col-4 px-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">First Name</span>
+                  <input type="text" class="form-control" aria-label="First Name" aria-describedby="firstName" id="firstName">
+                </div>
+              </div>
+
+              <div class="col-4 px-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Last Name</span>
+                  <input type="text" class="form-control" aria-label="Last Name" aria-describedby="lastName" id="lastName">
+                </div>
+              </div>
+
+              <div class="col-8 px-4">
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Email</span>
+                  <input type="text" class="form-control" aria-label="Email" aria-describedby="email" id="email">
+                </div>
+              </div>
+
+            </div>
+
+              <div class="text-center">
+                <button class="btn btn-secondary" onClick="validateForm()">Book Now</button>
+              </div>
+
+
+          </form>
+          
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+    <!-- footer -->
+    <nav class="navbar align-bottom" style="background: #454545;">
+        <div class="container">
+            <div class="col">
+                <div class="row">
+                    <div class="text-white" style="font-family: 'Roboto Serif', serif; font-weight: bold;">
+                        <p>Ottawa Cycle Repairs</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-white h6" style="font-family: 'Roboto Serif', serif; font-weight: 300; font-size: 12px; line-height: 0;">
+                        <p>123 Placeholder Street</p>
+                        <p>Ottawa, ON K1K 1K1</p>
+                        <p>613-123-4567</p>
+                        <a class="text-white h6" href="/location.html" style="font-family: 'Roboto Serif', serif; font-size: 12px; line-height: 0;">Directions & Opening Hours</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="row">
+                    <div class="text-white" style="font-family: 'Roboto Serif', serif; font-weight: bold;">
+                        <p>Services</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-white h6" style="font-family: 'Roboto Serif', serif; font-weight: 300; font-size: 12px; line-height: 0;">
+                        <a class="text-white h6" href="/services.html" style="font-family: 'Roboto Serif', serif; font-size: 12px; line-height: 0;">
+                            Our Services
+                        </a>
+                        <br>
+                        <p></p>
+                        <a class="text-white h6" href="/book.html" style="font-family: 'Roboto Serif', serif; font-size: 12px; line-height: 0;">
+                            Schedule an Appointment
+                        </a>
+                        <br>
+                        <p></p>
+                        <br>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="row">
+                    <div class="text-white" style="font-family: 'Roboto Serif', serif; font-weight: bold;">
+                        <p>About Us</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-white h6" style="font-family: 'Roboto Serif', serif; font-weight: 300; font-size: 12px; line-height: 0;">
+                        <a class="text-white h6" href="/experts.html#ourStory" style="font-family: 'Roboto Serif', serif; font-size: 12px; line-height: 0;">
+                            Our Story
+                        </a>
+                        <br>
+                        <p></p>
+                        <a class="text-white h6" href="/experts.html" style="font-family: 'Roboto Serif', serif; font-size: 12px; line-height: 0;">
+                            Our Experts
+                        </a>
+                        <br>
+                        <p></p>
+                        <br>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('#datepicker').datepicker();
+      });
+
+      //This function will check the url to see if the user navigated from the services page.
+      window.onload = function () {
+        var url, params, data, tmp;
+        url = document.location.href;
+        params = url.split('?')[1].split('&');
+        data = {};
+        for (var i = 0, l = params.length; i < l; i++) {
+            tmp = params[i].split('=');
+            data[tmp[0]] = tmp[1];
+        }
+        document.getElementById('service').value = data.service;
+      }
+
+      //This function validate the fields and redirects the user to the confirmation page
+      function validateForm() {
+
+        var service, expert, date, time, firstName, lastName, email;
+        service = document.getElementById('service').value;
+        expert = document.getElementById('expert').value;
+        date = document.getElementById('date').value;
+        time = document.getElementById('time').value;
+        firstName = document.getElementById('firstName').value;
+        lastName = document.getElementById('lastName').value;
+        email = document.getElementById('email').value;
+
+        if (service == "") {
+          alert("Please select a service.");
+          return;
+        }
+
+        if (expert == "") {
+          alert("Select an expert.");
+          return;
+        }
+
+        if (date == "") {
+          alert("Select a date");
+          return;
+        }
+
+        if (time=="") {
+          alert("Select a time");
+          return;
+        }
+
+        if (firstName=="") {
+          alert("Please enter your name");
+          return;
+        }
+
+        if (email=="") {
+          alert("Please enter your email.");
+          return;
+        }
+
+
+        url = window.location.origin + '/confirm.html?service=' + encodeURIComponent(service) + '&expert=' + encodeURIComponent(expert) + '&date=' + encodeURIComponent(date) + '&time=' + encodeURIComponent(time) + '&firstName=' + encodeURIComponent(firstName) + '&lastName=' + encodeURIComponent(lastName) + '&email=' + encodeURIComponent(email);
+        document.location.href = url;
+      }
+
+    </script>
+
+  </body>
+</html>

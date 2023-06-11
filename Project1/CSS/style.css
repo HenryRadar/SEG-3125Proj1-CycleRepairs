@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: underline;
+    font-size: large;
+    font-weight: 250;
+}
+
+h1 {
+    color:white;
+}
